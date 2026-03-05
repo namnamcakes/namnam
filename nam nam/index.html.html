@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> | La Tentación Viral</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth}
+body{background:#fff8f5;color:#4a2c2a}
+
+header{
+background:url('banner.png') center/cover no-repeat;
+height:100vh;
+display:flex;align-items:center;justify-content:center;
+text-align:center;color:white;position:relative;
+animation:zoom 20s infinite alternate ease-in-out;
+}
+@keyframes zoom{0%{background-size:100%}100%{background-size:110%}}
+header::before{content:"";position:absolute;width:100%;height:100%;background:rgba(0,0,0,0.65)}
+.hero{position:relative;z-index:2;max-width:900px;padding:20px}
+.hero h1{font-size:4.5rem;font-weight:900;letter-spacing:3px;text-shadow:0 5px 20px rgba(0,0,0,0.6)}
+.hero p{font-size:1.6rem;margin:20px 0}
+.btn{display:inline-block;margin:10px;padding:15px 40px;border-radius:50px;text-decoration:none;font-weight:700;transition:.3s}
+.btn-primary{background:#ff2e63;color:white}
+.btn-primary:hover{background:#e61e50;transform:scale(1.05)}
+.btn-secondary{background:white;color:#ff2e63}
+.btn-secondary:hover{transform:scale(1.05)}
+
+section{padding:100px 20px;text-align:center}
+.section-title{font-size:2.8rem;margin-bottom:50px;font-weight:800}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px;max-width:1200px;margin:auto}
+.card{background:white;padding:35px;border-radius:25px;box-shadow:0 20px 40px rgba(0,0,0,0.08);transition:.4s}
+.card:hover{transform:translateY(-15px) scale(1.03)}
+
+.promo{
+background:linear-gradient(45deg,#ff2e63,#ff8fab);
+color:white;padding:80px 20px
+}
+.promo h2{font-size:3rem;font-weight:900}
+.promo p{font-size:1.4rem;margin:20px 0}
+
+.testimonials{background:#fff0f3}
+.testimonial{font-style:italic}
+
+.instagram{background:#4a2c2a;color:white}
+.instagram a{color:#ff8fab;font-weight:bold;text-decoration:none}
+
+.whatsapp{
+position:fixed;bottom:20px;right:20px;
+background:#25D366;color:white;padding:18px 25px;
+border-radius:50px;text-decoration:none;font-weight:bold;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+animation:pulse 2s infinite
+}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.1)}100%{transform:scale(1)}}
+
+footer{background:#2e1b1a;color:white;padding:50px;text-align:center}
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="hero">
+<h1> </h1>
+
+<p>La tentación que está conquistando Guatemala </p>
+<a href="#productos" class="btn btn-primary">Ver el Menú</a>
+<a href="https://wa.me/50255859537" target="_blank" class="btn btn-secondary">Ordenar Ahora</a>
+</div>
+</header>
+
+<section class="promo">
+<h2>🔥 PROMO DEL MES 🔥</h2>
+<p>En la compra de un pastel de 12 porciones llévate 2 Brownies GRATIS.</p>
+<a href="https://wa.me/50255859537" target="_blank" class="btn btn-secondary">Quiero mi promo</a>
+</section>
+
+<section id="productos">
+<h2 class="section-title">Nuestro Menu</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Los Clásicos</h3>
+<p>Chocolate, Tres Leches, Zanahoria, Fresas con crema</p>
+<p><strong>Disponibles en Personal, 8 y 12 porciones</strong></p>
+<a href="https://wa.me/50255859537?text=Hola!%20Quiero%20ordenar%20un%20Pastel%20Clásico" target="_blank" class="btn btn-primary">Ordenar ahora</a>
+</div>
+
+<div class="card">
+<h3>Pies Horneados</h3>
+<p>Limón, Queso, Fresa y Melocotón</p>
+<p><strong>Disponibles en 8 porciones</strong></p>
+<a href="https://wa.me/50255859537?text=Hola!%20Quiero%20ordenar%20un%20Pie" target="_blank" class="btn btn-primary">Ordenar ahora</a>
+</div>
+
+<div class="card">
+<h3>Especialidades</h3>
+<p>Donas, Brownies (Cajas minis y paletas) y Galletas</p>
+<p><strong>Pedidos personalizados disponibles</strong></p>
+<a href="https://wa.me/50255859537?text=Hola!%20Quiero%20información%20sobre%20las%20especialidades" target="_blank" class="btn btn-primary">Ordenar ahora</a>
+</div>
+
+</div>
+</section>
+
+<section class="testimonials">
+<h2 class="section-title">Lo que dicen nuestros clientes ⭐</h2>
+<div class="grid">
+<div class="card testimonial">“El mejor pastel que he probado en mi vida. Súper recomendado.”</div>
+<div class="card testimonial">“Pedí uno y ahora compro cada mes. Demasiado bueno.”</div>
+<div class="card testimonial">“Perfecto para cumpleaños, todos quedaron encantados.”</div>
+</div>
+</section>
+
+<section class="instagram">
+<h2 class="section-title">Síguenos en Instagram</h2>
+<p>Descubre nuestros nuevos lanzamientos y promociones exclusivas.</p>
+<p>
+<a href="https://www.instagram.com/%C3%B1am%C3%B1amcakesgt/" target="_blank">
+@ñamñamcakesgt
+</a>
+</p>
+</section>
+
+<footer>
+<h2>Ñam Ñam</h2>
+<p>Pastelería artesanal viral en Guatemala</p>
+<p>Pedidos al WhatsApp: 5585-9537</p>
+<p>© 2026 Ñam Ñam | Todos los derechos reservados</p>
+</footer>
+
+<a href="https://wa.me/50255859537" target="_blank" class="whatsapp">WhatsApp</a>
+
+</body>
+</html>
